@@ -1,6 +1,6 @@
 var Sequelize = require('sequelize');
 var sequelize = new Sequelize(process.env.DATABASE_URL || 
-    'postgres://wwkxesrihjtkvc:88f24c048727da5c58c06f7de82db8e87a3db0db7e4ffd879f55a6dfc21cfbe6@ec2-184-73-201-79.compute-1.amazonaws.com:5432/d639dh23jligpj', {
+    'postgres://gasqroiwizeohf:bcfbecded9a305541120c8f573b95103aca569c1e16656aa1842a9190f75a129@ec2-107-20-224-137.compute-1.amazonaws.com:5432/d3e462aav8c5th', {
 	dialect: 'postgres'
 });
 sequelize.authenticate().then(
