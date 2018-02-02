@@ -6,14 +6,14 @@ var Definition = sequelize.import('../models/definition');
 router.post('/', function(req, res) {
 	//variables
 	    var description = req.body.definition.desc;
-        var logType= req.body.definition.type;
+        // var logType= req.body.definition.type;
 		var owner = req.body.user.id;
 	//methods
 	Definition
 	//objects must match the model 
 	.create({ 
 	   	description: description,
-	   	logType: logType,
+	   	// logType: logType,
 	   	owner: owner
 	   })
 
