@@ -9,7 +9,8 @@ var sequelize = require('./db');
 var User = sequelize.import('./models/user');
 
 //Create table
-sequelize.sync(); // tip: {force: true} for resetting tables
+sequelize.sync({force: true}); // tip: {force: true} for resetting tables
+
 
 app.use(bodyParser.json());
 
